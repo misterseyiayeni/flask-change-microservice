@@ -44,10 +44,10 @@ def change100route(dollar, cents):
     print(f"Make Change for {dollar}.{cents}")
     amount = f"{dollar}.{cents}"
     amount100 = float(amount) * 100
-    print(f"This is the {amount} X 100")
+    print(f"This is the {amount} multiplied by 100")
     result = change(amount100)
     return jsonify(result)
-
+    
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
